@@ -1,0 +1,101 @@
+.box-advertising {
+  background-color: #3A3637;
+  height: 100px;
+  margin: 32px 50px 0 50px;
+  clear: both;
+}
+
+.box-bateratv {
+  width: 100%;
+  min-height: 550px;
+  border: solid thin transparent;
+  margin-top: 45px;
+  background: url(/media/img/back_bateratv.png) center top repeat-x;
+  background-color: white;
+  .logo-bateratv {
+    margin: 50px auto 0 auto;
+    max-width: 285px;
+  }
+  .container-embed {
+    width: 100%;
+    min-height: 430px;
+    margin-top: 50px;
+  }
+}
+
+.box-subscribe {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 12%;
+  -webkit-box-shadow: 0px 2px 17px 2px rgba(235, 235, 235, 1);
+  -moz-box-shadow: 0px 2px 17px 2px rgba(235, 235, 235, 1);
+  box-shadow: 0px 2px 17px 2px rgba(235, 235, 235, 1);
+  .string-info {
+    float: left;
+    margin-top: 20px;
+    font-family: roboto-light;
+    font-size: 18px;
+    color: black;
+  }
+  .btn-subscribe {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #F4000E;
+    margin: 13px 0 13 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    img {
+      width: 26px;
+      height: 20px;
+      margin: 10px 7px 0 18px;
+      float: left;
+    }
+    .string {
+      width: 76px;
+      font-family: roboto-blackitalic;
+      font-size: 12px;
+      color: white;
+      text-transform: uppercase;
+      margin-top: 11px;
+      float: left;
+    }
+  }
+}
+
+.box-more {
+  height: 60px;
+  margin: 20 auto 0 auto;
+  &.videos {
+    width: 230px;
+  }
+  &.classified {
+    width: 300px;
+  }
+  .box-fonts {
+    float: left;
+    font-family: roboto-light;
+    font-size: 24px;
+    color: #3C3738;
+  }
+  .box-icon {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    &.icon-videos {
+      background: url('/media/img/arrow-more-videos.png') center no-repeat;
+    }
+    &.icon-classified {
+      background: url('/media/img/arrow-more-classified.png') center no-repeat;
+    }
+  }
+}
+
+.container-classified {
+  width: 100%;
+  border-top: solid thin #E1E1E1;
+  background-color: #F8F8F9;
+}

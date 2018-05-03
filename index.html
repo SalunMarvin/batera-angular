@@ -1,0 +1,67 @@
+<html ng-app="app">
+<head>
+    <title>Batera</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" media="all" href="/media/vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" href="/media/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" media="all" href="/media/vendor/lightbox2/dist/css/lightbox.css">
+    <link rel="stylesheet" media="all" href="/media/css/layout.css">
+    <link rel="stylesheet" href="/media/vendor/flickity/dist/flickity.css" media="screen">
+
+</head>
+<body ng-app="app">
+
+<menu></menu>
+<div ui-view="mainView">
+
+</div>
+<footer></footer>
+
+<script src="media/vendor/jquery/dist/jquery.min.js"></script>
+<script src="media/vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="media/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+
+<!-- Angular -->
+<script src="media/vendor/angular/angular.min.js"></script>
+<script src="media/vendor/angular-resource/angular-resource.min.js"></script>
+<script src="media/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="media/js/app.js"></script>
+
+<script src="api.constant.js"></script>
+
+<!-- Services -->
+<script src="abstract/service.abstract.js"></script>
+<script src="app/services/userauth.service.js"></script>
+<script src="app/services/config.service.js"></script>
+<script src="app/services/articles.service.js"></script>
+<script src="app/services/classified.service.js"></script>
+<script src="app/services/banner.service.js"></script>
+
+<!-- INNER PAGES' CONFIGS AND CONTROLLERS -->
+<script src="app/controllers/home.config.js"></script>
+<script src="app/controllers/home.controller.js"></script>
+<script src="app/controllers/articles.config.js"></script>
+<script src="app/controllers/articles.controller.js"></script>
+<script src="app/controllers/classified.config.js"></script>
+<script src="app/controllers/classified.controller.js"></script>
+
+<!-- Directives -->
+<script src="app/directives/menu/menu.js"></script>
+<script src="app/directives/articles/articles.js"></script>
+<script src="app/directives/footer/footer.js"></script>
+
+<script src="media/js/routes.js"></script>
+
+<script src="media/vendor/angular-flickity/dist/angular-flickity.min.js"></script>
+
+<!-- Extras -->
+<!--<script src="media/vendor/flickity/dist/flickity.pkgd.min.js"></script>-->
+
+</body>
+</html>
+
+

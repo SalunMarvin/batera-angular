@@ -1,0 +1,34 @@
+.box-product {
+  clear: both;
+  width: 100%;
+  max-width: 270px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(212, 212, 212, 1);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(212, 212, 212, 1);
+  box-shadow: 0px 1px 3px 0px rgba(212, 212, 212, 1);
+  background-color: white;
+  .box-image {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .box-data {
+    min-height: 100px;
+    padding: 10px;
+    .box-title {
+      width: 100%;
+      text-align: center;
+      font-family: roboto-black;
+      font-size: 20px;
+      color: black;
+    }
+    .box-price {
+      width: 100%;
+      text-align: center;
+      font-family: roboto-black;
+      font-size: 18px;
+      color: #FF8F00;
+    }
+  }
+}

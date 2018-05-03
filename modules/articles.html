@@ -1,0 +1,83 @@
+<div class="page-background">
+    <div class="container">
+        <h1 class="title-1 inner">Artigos Batera</h1>
+    </div>
+    <div class="box-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="input-group">
+                        <input type="text" placeholder="O que você está procurando?">
+                        <span class="input-group-btn">
+                            <button type="button">
+                                <img src="/media/img/icon_looking_glass.png" alt="buscar">
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-articles mt-40">
+            <div class="row">
+                 <div ng-repeat="featuredArticle in featuredArticles">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="box-featured">
+                                <a href="#/artigos/detalhes/{{featuredArticle.slug}}" class="box-image">
+                                    <div class="article-label position1 orange">Destaque</div>
+                                    <div class="article-label position2 {{featuredArticle.category.color}}">{{featuredArticle.category.name}}</div>
+                                    <img src="{{featuredArticle.mainImage}}" alt="drum">
+                                    <div class="title">
+                                        {{featuredArticle.shortTitle}}
+                                    </div>
+                                    <div class="box-info-publishing">
+                                        <div class="author">
+                                            {{featuredArticle.author}}
+                                        </div>
+                                        <div class="bullet">
+                                            •
+                                        </div>
+                                        <div class="datetime">
+                                            {{featuredArticle.publishedAt}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div ng-repeat="article in articles">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="box-article">
+                            <a href="#/artigos/detalhes/{{article.slug}}" class="box-image">
+                                <div class="article-label position1 {{article.category.color}}">{{article.category.name}}</div>
+                                <img src="{{article.mainImage}}" alt="drum">
+                            </a>
+                            <div class="box-title">
+                                <a href="#/artigos/detalhes/{{article.slug}}">{{article.shortTitle}}</a>
+                            </div>
+                            <div class="box-info-publishing">
+                                <div class="box-author">
+                                    {{article.author}}
+                                </div>
+                                <br>
+                                <div class="box-datetime">
+                                    {{article.publishedAt}}
+                                </div>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div class="box-content">
+                                {{article.shortContent}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-advertising hidden-md">
+
+        </div>
+    </div>
+</div>

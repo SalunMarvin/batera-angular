@@ -1,0 +1,27 @@
+.main-carousel {
+  height: 395px;
+}
+
+.flickity-viewport {
+  height: 395px !important;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 395px;
+
+  .title {
+    position: absolute;
+    left: 20px;
+    bottom: 31px;
+    font-family: roboto-medium;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+.post-banner {
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+  .container-article {
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: 510px;
+    .box-info-publishing {
+      margin: 6px 0;
+      .box-author {
+        font-family: roboto-medium;
+        font-size: 14px;
+        color: #FF8F00;
+        float: left;
+        margin-left: 10px;
+      }
+      .bullet {
+        font-family: roboto-light;
+        font-size: 14px;
+        color: black;
+        float: left;
+        padding: 0 2px;
+      }
+      .box-datetime {
+        font-family: roboto-light;
+        font-size: 14px;
+        color: black;
+        padding: 0 2px;
+        float: left;
+        margin-left: 8px;
+      }
+    }
+    .box-content {
+      width: 100%;
+      margin-top: 35px;
+      &.font-pattern {
+        font-family: roboto-thin;
+        font-size: 20px;
+        color: black;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+.article-inner-label {
+  float: left;
+  margin: 40px 10px 0 0;
+  font-family: roboto-light;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 7px 0 7px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  &.red {
+    background-color: #FF3B56;
+  }
+  &.purple {
+    background-color: #970A67
+  }
+  &.green {
+    background-color: #FD9909;
+  }
+  &.orange {
+    background-color: #00B500;
+  }
+}
+.article-title {
+  clear: both;
+  width: 100%;
+  font-family: roboto-medium;
+  font-size: 30px;
+  color: black;
+}
+.facebook-comments {
+  margin-top: 5px;
+  width: 100%;
+  .title {
+    width: 100%;
+    font-family: robotocondensed-bold;
+    font-size: 24px;
+    color: #3C3738;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: solid 2px #524E4F;
+  }
+  .facebook-plugin {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

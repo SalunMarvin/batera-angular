@@ -1,0 +1,197 @@
+.container-articles {
+  width: 100%;
+  .box-featured {
+    width: 100%;
+    border: solid thin #F0F0F0;
+    background-color: white;
+    margin-bottom: 20px;
+    .box-image {
+      display: block;
+      width: 100%;
+      position: relative;
+      border-radius: 4px;
+      position: relative;
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
+      .title {
+        position: absolute;
+        left: 20px;
+        bottom: 31px;
+        font-family: roboto-medium;
+        font-size: 19px;
+        color: white;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .box-info-publishing {
+        position: absolute;
+        left: 20px;
+        bottom: 12px;
+        height:20px;
+        .author {
+          float: left;
+          font-family: roboto-medium;
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: white;
+        }
+        .bullet {
+          float: left;
+          padding: 0px 3px;
+          font-family: roboto-medium;
+          font-size: 14px;
+          color: white;
+        }
+        .datetime {
+          float: left;
+          font-family: roboto-light;
+          font-size:14px;
+          color: white;
+        }
+      }
+    }
+  }
+  .box-article {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 420px;
+    border: solid thin #F0F0F0;
+    background-color: white;
+    margin-bottom: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(238, 238, 238, 1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(238, 238, 238, 1);
+    box-shadow: 0px 0px 3px 0px rgba(238, 238, 238, 1);
+    .box-image {
+      display: block;
+      width: 100%;
+      height: 152px;
+      position: relative;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        min-height: 152px;
+      }
+    }
+    .box-title {
+      width: 100%;
+      padding: 20px 10px 0 10px;
+      a {
+        font-family: roboto-medium;
+        font-size: 20px;
+        color: #000000;
+      }
+    }
+    .box-info-publishing {
+      margin: 6px 0;
+      .box-author {
+        font-family: roboto-medium;
+        font-size: 14px;
+        color: #FF8F00;
+        float: left;
+        margin-left: 10px;
+      }
+      .bullet {
+        font-family: roboto-light;
+        font-size: 14px;
+        color: black;
+        float: left;
+        padding: 0 2px;
+      }
+      .box-datetime {
+        font-family: roboto-light;
+        font-size: 14px;
+        color: black;
+        padding: 0 2px;
+        float: left;
+        margin-left: 8px;
+      }
+    }
+    .box-content {
+      clear: both;
+      width: 100%;
+      padding: 0 10px 10px 10px;
+      font-family: roboto-light;
+      font-size: 14px;
+      color: black;
+      line-height: 160%;
+    }
+  }
+}
+
+.box-more-articles {
+  width: 100%;
+  .ico-arrow {
+    width: 33px;
+    height: 33px;
+    float: right;
+    img {
+      width: 100%;
+    }
+  }
+  .string-more-articles {
+    float: right;
+    margin-right: 10px;
+    font-family: roboto-light;
+    font-size: 24px;
+    color: #3C3738;
+  }
+}
+
+.article-label {
+  position: absolute;
+  left: 10px;
+  height: 20px;
+  font-family: roboto-light;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 7px 0 7px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  &.position1 {
+    top: 10px;
+  }
+  &.position2 {
+    top: 35px;
+  }
+  &.red {
+    background-color: #FF3B56;
+  }
+  &.purple {
+    background-color: #970A67
+  }
+  &.green {
+    background-color: #FD9909;
+  }
+  &.orange {
+    background-color: #00B500;
+  }
+  &.hot {
+    background-color: #FF3B56;
+    width:36px;
+    .img-hot {
+      width: 38px;
+      height: 38px;
+      background: url(/media/img/hot_tag.png) center no-repeat;
+      position: absolute;
+      top: -22;
+      left: -1;
+      .label-hot {
+        position: absolute;
+        bottom: -3;
+        left: 10;
+      }
+    }
+  }
+}
